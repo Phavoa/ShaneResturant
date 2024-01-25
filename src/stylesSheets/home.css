@@ -1,0 +1,48 @@
+.resturant-images {
+  width: fit-content;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+
+}
+
+.inner-images {
+  display: flex;
+  width: fit-content;
+  animation: loop 55s linear infinite;
+}
+
+.image-div {
+  display: flex;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translate(-50%);
+  }
+}
+
+.res-images {
+  width: 50vw;
+  height: 50vh;
+}
+
+.image-text {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  bottom: 40%;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 144.523%;
+  letter-spacing: -0.96px;
+  text-align: center;
+  left: 10%;
+}

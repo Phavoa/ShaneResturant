@@ -1,0 +1,83 @@
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 35px 20px 10px 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.resturant-logo {
+  width: 156px;
+  height: 133px;
+  flex-shrink: 0;
+}
+
+.restaurantName {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 7px;
+}
+
+.shame,
+.resturant {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.shame {
+  color: #FF7E0D;
+}
+
+.resturant {
+  color: #2555D2;
+}
+
+.services {
+  color: #EB2D29;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal
+}
+
+.booking-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-menus {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu, .booking-button {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-menu:hover {
+  color: #D22525;
+}
+
+.booking-button {
+  width: 198px;
+  height: 55px;
+  flex-shrink: 0;
+  background: #D22525;
+  border: none;
+  border-radius: 8px;;
+}

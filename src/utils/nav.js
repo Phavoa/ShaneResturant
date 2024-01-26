@@ -3,6 +3,8 @@ import Logo from "../asset/Restaurant-logo.png";
 import { createDivElement } from "./createDiv";
 import { createParagraphElement } from "./createParagraph";
 import { createImageElement } from "./createImage";
+import { createLinkElement } from "./createLink";
+import { home } from "../pages/home";
 
 export function navBar() {
   const contentDiv = document.getElementById('content');
@@ -27,17 +29,19 @@ export function navBar() {
 
   const navMenu = createDivElement("nav-menus", bookingContainer);
 
-  const home = createParagraphElement('nav-menu', "HOME", navMenu); // Corrected here
-  const menu = createParagraphElement('nav-menu', "MENU", navMenu);
-  const banquet = createParagraphElement('nav-menu', "BANQUET FACILITY", navMenu); // Corrected here
-  const gallery = createParagraphElement('nav-menu', "GALLERY", navMenu);
-  const catering = createParagraphElement('nav-menu', "CATERING", navMenu);
-  const contact = createParagraphElement('nav-menu', "CONTACT US", navMenu);
+  const homeLink = createLinkElement('nav-menu', "HOME", "", navMenu);
+  const menuLink = createLinkElement('nav-menu', "MENU", "", navMenu);
+  const banquetLink = createLinkElement('nav-menu', "BANQUET FACILITY", "/banquet", navMenu);
+  const galleryLink = createLinkElement('nav-menu', "GALLERY", "/gallery", navMenu);
+  const cateringLink = createLinkElement('nav-menu', "CATERING", "/catering", navMenu);
+  const contactLink = createLinkElement('nav-menu', "CONTACT US", "/contact", navMenu);
 
-  const bookinButton = document.createElement('button');
-  bookinButton.className = "booking-button";
-  bookinButton.textContent = "BOOK A BANQUET";
-  bookingContainer.appendChild(bookinButton)
+  const bookingButton = document.createElement('a'); // Change from button to anchor element
+  bookingButton.className = "booking-button";
+  bookingButton.textContent = "BOOK A BANQUET";
+  bookingButton.href = "/book-a-banquet";
+  bookingContainer.appendChild(bookingButton);
+  
 }
 
 

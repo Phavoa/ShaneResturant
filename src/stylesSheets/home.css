@@ -1,9 +1,19 @@
+#content {
+  display: grid;
+  grid-template-rows: 150px 1fr 200px;
+}
+
+#content>div {
+  border: 2px solid green;
+}
+
 .resturant-images {
   width: fit-content;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   position: relative;
   justify-content: center;
+  height: calc(100vh - 350px);
 
 }
 
@@ -29,7 +39,6 @@
 
 .res-images {
   width: 50vw;
-  height: 50vh;
 }
 
 .image-text {
@@ -45,4 +54,31 @@
   letter-spacing: -0.96px;
   text-align: center;
   left: 10%;
+}
+
+.buttom-div {
+  background-image: url("../asset/Rectangle10.png");
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  gap: 150px;
+}
+
+.buttom-div>p, .buttom-div>button {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.buttom-div>button {
+  padding: 20px 50px;
+  flex-shrink: 0;
+  color: black;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: none;
 }

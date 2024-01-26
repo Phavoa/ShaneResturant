@@ -25,4 +25,12 @@ export function home() {
   createParagraphElement('image-text', "SERVING BEST RESTURENT CATRING & BONQUET SERVICES IN NEW JERCY", resturantImages);
   console.log("home is working");
 
+  const buttomDiv = createDivElement('buttom-div', contentDiv);
+  const indoChaine = createParagraphElement('indo-chaine', "we are now serving authenitic indo-chines food", buttomDiv);
+  const curbsideBtn = document.createElement('button'); 
+  curbsideBtn.className = "cubside-btn";
+  curbsideBtn.textContent = "curbside pickup";
+  buttomDiv.appendChild(curbsideBtn);
+
+
 }

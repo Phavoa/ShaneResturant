@@ -1,4 +1,4 @@
-import { home } from "./pages/home";
+import { home } from "./pages/home.js";
 import "./stylesSheets/general.css";
 
 

@@ -81,3 +81,10 @@
   border: none;
   border-radius: 8px;;
 }
+
+a {
+  display:  flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
